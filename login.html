@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login or Register</title>
+</head>
+
+<body background="image\bgc.png" >
+	<!--Login form-->
+	<form method="POST" class="loginform" action="login_register.php">
+		<br><br>
+		<button type="button" class="login_button">Login</button><button type="button" class="register_button">Register</button>
+		<br><br><br><br>
+		<input type="text" class="" name="userid" placeholder="User ID" required>
+		<br><br><br>
+		<input type="password" class="" name="userpass" placeholder="Password" required>
+		<br><br><br>
+		<input type="submit" name="login" value="Login">&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="button" class="home" value="Home">
+		<br><br><br><br>
+	</form>
+
+	<!--Register form color: #008B8B;-->				
+	<form method="POST" class="registerform" action="login_register.php">
+		<br><br>
+		<button type="button" class="login_button">Login</button><button type="button" class="register_button">Register</button>
+		<br><br>
+		<input type="text" name="userid" placeholder="User ID" required>
+		<br><br>
+		<input type="text" name="username" placeholder="Name" required>
+		<br><br>
+		<input type="password" name="userpass" placeholder="Password" required>
+		<br><br>
+		<input type="password" name="userpass1" placeholder="Re-enter Password" required>
+		<br><br>
+		<input type="email" name="useremail" placeholder="E-mail" required>
+		<br><br>
+		<input type="text" name="usertype" value="Student" placeholder="User Type" readonly>
+		<br><br>
+		<input type="submit" name="register" value="Register">&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="button" class="home" value="Home">
+	</form>
+</body>
+</html>
