@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Profile</title>
+	<style>
+		a:hover{
+			font-size: 24px;
+		}
+		a{
+			color: blue;
+		}
+		form{
+			margin-left: 60px;
+			margin-top: 15px;
+			margin-right: 60px;
+		}
+		table{
+			min-width: 550px;
+			max-width: 800px;
+			margin-top:50px;
+			margin-bottom:50px;
+			margin-left:auto;
+			margin-right:auto;
+			background-color: white;
+			padding: 30px;
+			min-height: 400px;
+		}
+		th{
+			font-size: 30px;
+			text-align: center;
+			text-decoration: underline;
+			padding-bottom: 5px;
+		}
+		td{
+			padding: 5px;
+			font-size: 20px;
+			font-family: Times New Roman;
+		}
+		input[type=submit]{
+			padding: 10px;
+			color: black;
+			border: none;
+			background-color: #66CDAA;
+			font-weight: 900;
+			font-family: Times New Roman;
+			font-size: 20px;
+			text-align: center;
+			width: 120px;
+		}
+		input[type=submit]:hover{
+			background-color: #20B2AA;
+		}
+		hr{
+			border-top: 5px dotted grey;
+			border-bottom: none;
+			border-left: none;
+			border-right: none;
+			padding-top: 10px;
+		}
+		img{
+			width: 100%;
+			height: auto;
+		}
+		.dropdown{
+			display: inline-block;
+			position: relative;
+		}
+		.dropdown-content{
+			display: none;
+			position: absolute;
+			z-index: 1;
+			background: #E0FFFF;
+			padding: 5px;
+		}
+		.dropdown-button{
+			display: inline-block;
+			width: 100%;
+			padding: 5px;
+			font-family: Times New Roman;
+			font-size: 18px;
+			background: #E0FFFF;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			border-bottom: 2px #66CDAA solid;
+		}
+		.dropdown-button:hover{
+			background-color: #66CDAA;
+		}
+	</style>
+</head>
+</html>
