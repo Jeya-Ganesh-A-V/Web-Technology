@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login or Register</title>
+	<style>
+		.login_button{
+			font-family: Times New Roman;
+			color: black;
+			font-size: 26px;
+			font-weight: 900;
+			width: 50%;
+			text-align: center;
+			border: none;
+			background-color: #66CDAA;
+			padding: 8px 0px;
+			display: inline-block;
+		}
+		.register_button{
+			font-family: Times New Roman;
+			color: black;
+			font-size: 26px;
+			font-weight: 900;
+			width: 50%;
+			text-align: center;
+			border: none;
+			background-color: white;
+			padding: 8px 0px;
+			display: inline-block;
+		}
+		input[type=submit], input[type=button]{
+			padding: 10px 5px; 
+			color: black;
+			border: none;
+			background-color: #66CDAA;
+			font-weight: 700;
+			font-size: 18px;
+			font-family: Times New Roman;
+			text-align: center;
+			width: 22%;
+		}
+		input[type=submit]:hover, input[type=button]:hover{
+			background-color: #20B2AA;
+		}
+		input[type=text], input[type=password], input[type=email]{
+			background-color: white;
+			padding: 6px 2px;
+			text-align: center;
+			border-style: none;
+			border-bottom: 2px solid #66CDAA;
+			font-size: 18px;
+			font-family: Times New Roman;
+			width: 60%;
+		}
+		.loginform{
+			margin-top: 50px;
+			width: 500px;
+			height: 500px;
+			margin-left: 33%;
+			margin-right: 33%;
+			text-align: center;
+			background-color: white; 
+			font-size: 18px;
+			font-family: Times New Roman;
+			z-index: 1;
+			position: absolute;
+		}
+		.registerform{
+			margin-top: 50px;
+			width: 500px;
+			height: 500px;
+			margin-left: 33%;
+			margin-right: 33%;
+			text-align: center;
+			background-color: white; 
+			font-size: 18px;
+			font-family: Times New Roman;
+			position: absolute;
+		}
+		.register-active{
+			z-index: 2;
+		}
+	</style>
+</body>
+</html>
