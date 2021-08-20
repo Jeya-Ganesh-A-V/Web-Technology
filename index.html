@@ -1,0 +1,70 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title>COLLEGE EVENT MANAGEMENT</title>
+	<style type="text/css">
+		a:hover{
+			font-size: 24px;
+		}
+		a{
+			color: blue;
+		}
+		.top{
+			font-size: 34px;
+			font-family: Helvetica;
+			text-align: center;
+		}
+		form{
+			margin-left: 60px;
+			margin-top: 15px;
+			margin-right: 60px;
+		}
+		input[type=submit]{
+			padding: 12px;
+			color: black;
+			border: none;
+			background-color: #66CDAA;
+			font-weight: 900;
+			font-family: Times New Roman;
+			font-size: 16px;
+			text-align: center;
+			width: auto;
+		}
+		input[type=submit]:hover{
+			background-color: #20B2AA;
+		}
+		table{
+			margin-left:60px
+			margin-right:60px;
+			text-align:justify;
+			border-bottom:dashed;
+			background-color: white;
+		}
+		.event_name{
+			font-family: Times New Roman;
+			border-style: none;
+			font-size: 30px;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body background="image\bgc.png" >
+	<button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+	<hr width="auto" size="10" style="background: #808000">
+	<div class="top">
+		<h1>COLLEGE EVENTS</h1>
+	</div>
+	<hr width="auto" size="10" style="background: #808000">
+
+	<!--Search event form-->
+	<div class="search" style="text-align: center">
+		<form action="event_detail.php" method="POST" >
+			<input type="text" size="40" name="searchevent" placeholder="Enter event name to search event" style="font-size: 16px;padding: 10px" />
+			<input type="submit" name="search" value="Search"/>
+		</form>
+	</div>
+	<hr width="auto" size="4" style="background: #808000">
+
+	
+</body>
+</html>
