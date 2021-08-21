@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Detail/Search Event</title>
+	<style>
+		a:hover{
+			font-size: 24px;
+		}
+		a{
+			color: blue;
+		}
+		.top{
+			font-size: 34px;
+			font-family: Helvetica;
+			text-align: center;
+		}
+		input[type=submit]{
+			padding: 12px;
+			color: black;
+			border: none;
+			background-color: #66CDAA;
+			font-weight: 900;
+			font-family: Times New Roman;
+			font-size: 16px;
+			text-align: center;
+			width: auto;
+		}
+		input[type=submit]:hover{
+			background-color: #20B2AA;
+		}
+		form{
+			margin-left: 60px;
+			margin-top: 15px;
+			margin-right: 60px;
+		}
+		table{
+			margin-left:60px
+			margin-right:60px;
+			text-align:justify;
+			border-bottom:dashed;
+			background-color: white;
+		}
+		.event_name{
+			font-family: Times New Roman;
+			border-style: none;
+			font-size: 30px;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+</html>
