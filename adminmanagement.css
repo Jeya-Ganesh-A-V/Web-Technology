@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Management</title>
+	<style type="text/css">
+		a:hover{
+			font-size: 24px;
+		}
+		a{
+			color: blue;
+		}
+		form{
+			margin-left: 60px;
+			margin-top: 15px;
+			margin-right: 60px;
+		}
+		table{
+			text-align: center;
+			background-color: white;
+			font-size: 28px;
+			font-weight: 900;
+			width: 850px;
+		}
+		input[type=submit]{
+			padding: 10px;
+			color: black;
+			border: none;
+			background-color: #66CDAA;
+			font-weight: 900;
+			font-family: Times New Roman;
+			font-size: 28px;
+			text-align: center;
+			width: 150px;
+		}
+		input[type=submit]:hover{
+			background-color: #20B2AA;
+		}
+		.dropdown{
+			display: inline-block;
+			position: relative;
+		}
+		.dropdown-content{
+			display: none;
+			position: absolute;
+			z-index: 1;
+			min-width: 250%;
+			background: #E0FFFF;
+		}
+		.dropdown-button{
+			display: inline-block;
+			min-width: 45%;
+			padding: 5px 5px;
+			font-family: Times New Roman;
+			font-size: 20px;
+			background: #E0FFFF;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			border-bottom: 2px #66CDAA solid;
+		}
+		.dropdown-button:hover{
+			background-color: #66CDAA;
+		}
+	</style>
+</head>
+</html>
