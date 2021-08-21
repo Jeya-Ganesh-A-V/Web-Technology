@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View User</title>
+	<style type="text/css">
+		a:hover{
+			font-size: 24px;
+		}
+		a{
+			color: blue;
+		}
+		form{
+			margin-left: 60px;
+			margin-top: 15px;
+			margin-right: 60px;
+		}
+		table{
+			max-width:1200px;
+			margin-bottom:50px;
+			margin-left:auto;
+			margin-right:auto;
+			background-color: white;
+			text-align:center;
+		}
+		th{
+			background-color: #66CDAA;
+			border:1px solid #66CDAA;
+			font-size: 22px;
+			text-align: center;
+			padding-top: 10px ;
+			padding-bottom: 10px ;
+		}
+		td{
+			border:1px solid black;
+			font-size: 20px;
+			font-family: Times New Roman;
+			text-align: center;
+			padding-top: 5px ;
+			padding-bottom: 5px ;
+		}
+		input[type=submit]{
+			padding: 5px;
+			color: black;
+			border: none;
+			background-color: #66CDAA;
+			font-weight: 700;
+			font-family: Times New Roman;
+			font-size: 18px;
+			text-align: center;
+			width: 100px;
+		}
+		input[type=submit]:hover{
+			background-color: #20B2AA;
+		}
+		div{
+			margin: auto;
+			padding-bottom: 1px;
+			width: 70%;
+			background-color: white;
+		}
+		hr{
+			border-top: 5px dotted grey;
+			border-bottom: none;
+			border-left: none;
+			border-right: none;
+			width: 95%;
+			padding-top: 10px
+		}
+	</style>
+</head>
+</html>
