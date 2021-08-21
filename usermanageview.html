@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View User</title>
+</head>
+<body background="image\bgc.png">
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+
+	<!--Sort according to name in ascending/descending order-->
+	<!--Sort according to UserID by default-->
+	<div id="view" align="center">
+		<br>
+		<p><span style="text-decoration: underline;font-weight: 900;font-size: 30px"> >>> View All User <<< </span></p>
+		<hr>
+		<form action="user_manage_view.php" method="POST" style="font-size: 20px;">
+			Sort according to user name in: &nbsp;&nbsp;
+			<input type="submit" name="ascending" value="Ascending">&nbsp;&nbsp;
+			<input type="submit" name="descending" value="Descending">
+		</form>
+		<hr>
+		<table align="center" cellpadding="20px" cellspacing="6px">
+			<tr>
+				<th>No.</th>
+				<th>ID</th>
+				<th>Name</th>
+				<th>E-mail</th>
+				<th>User Type</th>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
