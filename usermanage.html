@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add/Edit/Delete User </title>
+</head>
+<body background="image\bgc.png">
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+		<hr width="auto" size="10" style="background: #808000">
+
+	<div id="add">
+		<form action="user_manage.php#add" method="POST">
+			<table align="center" cellspacing="20px">
+				<tr><th style="text-decoration: underline;"> >>> Add New User <<< </th></tr>
+				<tr><td>User ID: <input type="text" name="a_userid" size="30" required></td></tr>
+				<tr><td>Name: <input type="text" name="a_username" size="30" required></td></tr>
+				<tr><td>Password: <input type="text" name="a_userpass" size="30" required></td></tr>
+				<tr><td>Email: <input type="email" name="a_useremail" size="30" required></td></tr>
+				<tr><td>User Type: 
+					<select name="a_usertype" style="width: 120px;">
+						<option value="">Select</option>
+						<option value="Student">Student</option>
+						<option value="Admin">Admin</option>
+					</select>
+				</td></tr>
+				<tr><td><input type="submit" name="adduser" value="Add">&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="reset" name="cancel" value="Cancel"></td></tr>
+			</table>
+		</form>
+	</div>
+	<hr width="auto" size="10" style="background: #808000">
+	<div id="edit">
+		<form action="user_manage.php#edit" method="POST">
+			<table align="center" cellspacing="20px">
+				<tr><th style="text-decoration: underline;"> >>> Edit User <<< </th></tr>
+				<tr><td>User ID: 
+					<select name="edit_user_id" style="width: 140px;">
+						<option value="">Select</option>
+						</select>
+				&nbsp;&nbsp;<input type="submit" name="refreshuser" value="Refresh"></td></tr>
+				<tr><td><img src="image/divide.jpg" height="40%" width="100%" style="opacity: 0.6"></td></tr>
+				<tr><td>New User Name: <input type="text" name="e_username" size="30"></td></tr>
+				<tr><td>New User Email: <input type="text" name="e_useremail" size="30"></td></tr>
+				<tr><td><input type="submit" name="edituser" value="Save">&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="reset" name="cancel" value="Cancel"></td></tr>
+			</table>
+		</form>
+	</div>
+	<hr width="auto" size="10" style="background: #808000">
+	<div id="delete">
+		<form action="user_manage.php#delete" method="POST">
+			<table align="center" cellspacing="20px">
+				<tr><th style="text-decoration: underline;"> >>> Delete User <<< </th></tr>
+				<tr><td>User ID: 
+					<select name="delete_user_id" style="width: 140px;">
+						<option value="">Select</option>
+						</select>
+				&nbsp;&nbsp;<input type="submit" name="refreshuser" value="Refresh"></td></tr>
+				<tr><td><input type="submit" name="deleteuser" value="Delete">&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="reset" name="cancel" value="Cancel"></td></tr>
+		</form>
+	</div>
+</body>
+</html>
