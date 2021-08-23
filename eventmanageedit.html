@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Event</title>
+</head>
+<body background="image\bgc.png">
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+	<div id="editname">
+		<form action="event_manage_edit.php#editname" method="POST">
+			<table align="center" cellspacing="20px">
+				<tr><th style="text-decoration: underline;"> >>> Edit Event Name <<< </th></tr>
+				<tr><td>Event: 
+					<select name="edit_event_name" >
+						<option value="">Select</option>
+					</select>
+				&nbsp;&nbsp;<input type="reset" name="refreshevent" value="Refresh"></td></tr>
+				<tr><td><img src="image/divide.jpg" height="40%" width="100%" style="opacity: 0.6"></td></tr>
+				<tr><td>New Event Name: <input type="text" name="e_eventname" size="35" required></td></tr>
+				<tr><td colspan="2"><input type="submit" name="editname" value="Save">&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="reset" name="cancel" value="Cancel"></td></tr>
+			</table>
+		</form>
+	</div>
+	<hr width="auto" size="10" style="background: #808000">
+	<div id="editdate">
+		<form action="event_manage_edit.php#editdate" method="POST">
+			<table align="center" cellspacing="20px">
+				<tr><th style="text-decoration: underline;"> >>> Edit Event Date <<< </th></tr>
+				<tr><td>Event: 
+					<select name="edit_event_name" >
+						<option value="">Select</option>
+					</select>
+				&nbsp;&nbsp;<input type="reset" name="refreshevent" value="Refresh"></td></tr>
+				<tr><td><img src="image/divide.jpg" height="40%" width="100%" style="opacity: 0.6"></td></tr>
+				<tr>
+					<td>New Event Date: 
+						<input type="number" name="e_eventyear" min="2019" max="2050" placeholder="YYYY" required> -
+						<input type="number" name="e_eventmonth" min="01" max="12" placeholder="MM" required> -
+						<input type="number" name="e_eventday" min="01" max="31" placeholder="DD" required>
+					</td>
+				</tr>
+				<tr><td colspan="2"><input type="submit" name="editdate" value="Save">&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="reset" name="cancel" value="Cancel"></td></tr>
+			</table>
+		</form>
+	</div>
+	<hr width="auto" size="10" style="background: #808000">
+	<div id="edittime">
+		<form action="event_manage_edit.php#edittime" method="POST">
+			<table align="center" cellspacing="20px">
+				<tr><th style="text-decoration: underline;"> >>> Edit Event Time <<< </th></tr>
+				<tr><td>Event: 
+					<select name="edit_event_name" >
+						<option value="">Select</option>
+					</select>
+				&nbsp;&nbsp;<input type="reset" name="refreshevent" value="Refresh"></td></tr>
+				<tr><td><img src="image/divide.jpg" height="40%" width="100%" style="opacity: 0.6"></td></tr>
+				<tr>
+					<td>New Event Time (24-hour format): 
+						<input type="number" name="e_eventhour" min="00" max="24" placeholder="HH" required> : 
+						<input type="number" name="e_eventminute" min="00" max="60" placeholder="MM" required>
+					</td>
+				</tr>
+				<tr><td colspan="2"><input type="submit" name="edittime" value="Save">&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="reset" name="cancel" value="Cancel"></td></tr>
+			</table>
+		</form>
+	</div>
+	<hr width="auto" size="10" style="background: #808000">
+	<div id="editcategory">
+		<form action="event_manage_edit.php#editcategory" method="POST">
+			<table align="center" cellspacing="20px">
+				<tr><th style="text-decoration: underline;"> >>> Edit Event Category <<< </th></tr>
+				<tr><td>Event: 
+					<select name="edit_event_name" >
+						<option value="">Select</option>
+					</select>
+				&nbsp;&nbsp;<input type="reset" name="refreshevent" value="Refresh"></td></tr>
+				<tr><td><img src="image/divide.jpg" height="40%" width="100%" style="opacity: 0.6"></td></tr>
+				<tr><td>New Event Category: <br><textarea name="e_eventcategory" rows="2" cols="50" placeholder="eg: Concert, Sports, Talk, Festival etc..." required></textarea></td></tr>
+				<tr><td colspan="2"><input type="submit" name="editcategory" value="Save">&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="reset" name="cancel" value="Cancel"></td></tr>
+			</table>
+		</form>
+	</div>
+	<hr width="auto" size="10" style="background: #808000">
+	<div id="editdescription">
+		<form action="event_manage_edit.php#editdescription" method="POST">
+			<table align="center" cellspacing="20px">
+				<tr><th style="text-decoration: underline;"> >>> Edit Event Description <<< </th></tr>
+				<tr><td>Event: 
+					<select name="edit_event_name" >
+						<option value="">Select</option>
+					</select>
+				&nbsp;&nbsp;<input type="reset" name="refreshevent" value="Refresh"></td></tr>
+				<tr><td><img src="image/divide.jpg" height="40%" width="100%" style="opacity: 0.6"></td></tr>
+				<tr><td>New Event Description: <br><textarea name="e_eventdescription" rows="5" cols="60" style="text-align: justify" required ></textarea></td></tr>
+				<tr><td colspan="2"><input type="submit" name="editdescription" value="Save">&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="reset" name="cancel" value="Cancel"></td></tr>
+			</table>
+		</form>
+	</div>
+	<hr width="auto" size="10" style="background: #808000">
+	<div id="editvenue">
+		<form action="event_manage_edit.php#editvenue" method="POST">
+			<table align="center" cellspacing="20px">
+				<tr><th style="text-decoration: underline;"> >>> Edit Event Venue <<< </th></tr>
+				<tr><td>Event: 
+					<select name="edit_event_name" >
+						<option value="">Select</option>
+					</select>
+				&nbsp;&nbsp;<input type="reset" name="refreshevent" value="Refresh"></td></tr>
+				<tr><td><img src="image/divide.jpg" height="40%" width="100%" style="opacity: 0.6"></td></tr>
+				<tr><td>New Venue: 
+					<select name="e_eventvenue" >
+						<option value="">Select</option>
+					</select>
+				</td></tr>
+				<tr><td colspan="2"><input type="submit" name="editvenue" value="Save">&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="reset" name="cancel" value="Cancel"></td></tr>
+			</table>
+		</form>
+	</div>
+	<hr width="auto" size="10" style="background: #808000">
+	<div id="editticketprice">
+		<form action="event_manage_edit.php#editticketprice" method="POST">
+			<table align="center" cellspacing="20px">
+				<tr><th style="text-decoration: underline;"> >>> Edit Ticket Price <<< </th></tr>
+				<tr><td>Event: 
+					<select name="edit_event_name" >
+						<option value="">Select</option>
+					</select>
+				&nbsp;&nbsp;<input type="reset" name="refreshevent" value="Refresh"></td></tr>
+				<tr><td><img src="image/divide.jpg" height="40%" width="100%" style="opacity: 0.6"></td></tr>
+				<tr><td>New Ticket Price: Rs. <input type="number" name="e_eventticketprice" min="00" placeholder="0" required>.00 </td></tr>
+				<tr><td colspan="2"><input type="submit" name="editticketprice" value="Save">&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="reset" name="cancel" value="Cancel"></td></tr>
+			</table>
+		</form>
+	</div>
+	<hr width="auto" size="10" style="background: #808000">
+	<div id="edittickettotal">
+		<form action="event_manage_edit.php#edittickettotal" method="POST">
+			<table align="center" cellspacing="20px">
+				<tr><th style="text-decoration: underline;"> >>> Edit Number of Ticket <<< </th></tr>
+				<tr><td>Event: 
+					<select name="edit_event_name" >
+						<option value="">Select</option>
+					</select>
+				&nbsp;&nbsp;<input type="reset" name="refreshevent" value="Refresh"></td></tr>
+				<tr><td><img src="image/divide.jpg" height="40%" width="100%" style="opacity: 0.6"></td></tr>
+				<tr><td>New Number of Ticket: <input type="number" name="e_eventtickettotal" min="10" placeholder="10" required></td></tr>
+				<tr><td colspan="2"><input type="submit" name="edittickettotal" value="Save">&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="reset" name="cancel" value="Cancel"></td></tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
