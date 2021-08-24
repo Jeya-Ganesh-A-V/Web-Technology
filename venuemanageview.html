@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View Venue</title>
+</head>
+<body background="image\bgc.png">
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+
+	<!--Sort according to name in ascending/descending order-->
+	<!--Sort according to UserID by default-->
+	<div id="view" align="center">
+		<br>
+		<p><span style="text-decoration: underline;font-weight: 900;font-size: 30px"> >>> View All Venue <<< </span></p>
+		<hr>
+		<form action="venue_manage_view.php" method="POST" style="font-size: 20px;">
+			Sort according to venue name in: &nbsp;&nbsp;
+			<input type="submit" name="ascending" value="Ascending">&nbsp;&nbsp;
+			<input type="submit" name="descending" value="Descending">
+		</form>
+		<hr>
+		<table align="center" cellpadding="20px" cellspacing="6px">
+			<tr>
+				<th>No.</th>
+				<th>Venue Name</th>
+				<th>Venue Information</th>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
