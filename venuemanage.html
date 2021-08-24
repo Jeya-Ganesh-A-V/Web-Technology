@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Venue Manage</title>
+</head>
+<body background="image\bgc.png">
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+	<hr width="auto" size="10" style="background: #808000">
+
+	<div id="add">
+		<form action="venue_manage.php#add" method="POST">
+			<table align="center" cellspacing="20px">
+				<tr><th style="text-decoration: underline;"> >>> Add New Venue <<< </th></tr>
+				<tr><td>Name: <input type="text" name="a_venuename" size="30" required></td></tr>
+				<tr><td>Information: <input type="text" name="a_venueinfo" size="30" placeholder="eg: Canteen/ For sports..." required></td></tr>
+				<tr><td><input type="submit" name="addvenue" value="Add">&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="submit" name="cancel" value="Cancel"></td></tr>
+			</table>
+		</form>
+	</div>
+	<hr width="auto" size="10" style="background: #808000">
+	<div id="edit">
+		<form action="venue_manage.php#edit" method="POST">
+			<table align="center" cellspacing="20px">
+				<tr><th style="text-decoration: underline;"> >>> Edit Venue <<< </th></tr>
+				<tr><td>Venue: 
+					<select name="edit_venue_name" style="width: auto;">
+						<option value="">Select</option>
+					</select>
+				&nbsp;&nbsp;<input type="submit" name="refreshvenue" value="Refresh"></td></tr>
+				<tr><td><img src="image/divide.jpg" height="40%" width="100%" style="opacity: 0.6"></td></tr>
+				<tr><td>New Venue Name: <input type="text" name="e_venuename" size="30"></td></tr>
+				<tr><td>New Venue Information: <input type="text" name="e_venueinfo" size="30"></td></tr>
+				<tr><td><input type="submit" name="editvenue" value="Save">&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="submit" name="cancel" value="Cancel"></td></tr>
+			</table>
+		</form>
+	</div>
+	<hr width="auto" size="10" style="background: #808000">
+	<div id="delete">
+		<form action="venue_manage.php#delete" method="POST">
+			<table align="center" cellspacing="20px">
+				<tr><th style="text-decoration: underline;"> >>> Delete Venue <<< </th></tr>
+				<tr><td>Venue: 
+					<select name="delete_venue_name" style="width: auto;">
+						<option value="">Select</option>
+					</select>
+				&nbsp;&nbsp;<input type="submit" name="refreshvenue" value="Refresh"></td></tr>
+				<tr><td><input type="submit" name="deletevenue" value="Delete">&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="submit" name="cancel" value="Cancel"></td></tr>
+		</form>
+	</div>
+</body>
+</html>
