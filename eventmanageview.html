@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View User</title>
+</head>
+<body background="image\bgc.png">
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+
+	<!--Sort according to name in ascending/descending order-->
+	<!--Sort according to UserID by default-->
+	<div id="view" align="center">
+		<br>
+		<p><span style="text-decoration: underline;font-weight: 900;font-size: 30px"> >>> View All Event <<< </span></p>
+		<hr>
+		<form action="event_manage_view.php" method="POST" style="font-size: 20px;">
+			Event Name: 
+			<input type="submit" name="name_asc" value="Ascending">&nbsp;
+			<input type="submit" name="name_desc" value="Descending">
+			&nbsp;&nbsp;Event Date: 
+			<input type="submit" name="date_asc" value="Ascending">&nbsp;
+			<input type="submit" name="date_desc" value="Descending">
+		</form>
+		<hr>
+		<table align="center" cellpadding="20px" cellspacing="6px">
+			<tr>
+				<th width="4%">No.</th>
+				<th width="25%">Name</th>
+				<th width="11%">Date</th>
+				<th width="11%">Time</th>
+				<th width="12%">Category</th>
+				<th width="4%">Ticket Price</th>
+				<th width="4%">Total Ticket</th>
+				<th width="4%">Ticket Sold</th>
+				<th width="20%">Venue</th>
+				<th width="5%">Winners</th>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
